@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-samy-fichel-meyer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./sass/main.css --use autoprefixer -d ./sass/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

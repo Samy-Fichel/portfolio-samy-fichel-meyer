@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", "Sans-serif";
+}
+
+/********************* HEADER MENU ***************/
+.menu {
+    display: none;
+    flex-basis: 100%;
+    list-style: none;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+.menu-checkbox:checked~.menu {
+    display: block;
+}
+
+.menu-checkbox {
+    opacity: 0;
+    position: absolute;
+    top: -5000px;
+}
+
+.menu-toggle {
+    padding: .5em;
+}
+
+.menu-checkbox:focus+.menu-toggle {
+    outline: #00A1A1 auto 5px;
+}
+
+.nav-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+/********************* END HEADER MENU ***************/
+
+/********************* BLOC INTRO ***************/
+.block-presentation {
+    background-color: #F6F6F6;
+}
+
+.container-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-portrait {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 5em;
+    padding: 2em;
+    height: auto;
+}
+
+.title-intro {
+    text-align: center;
+    line-height: 2em;
+    font-family: $font-family;
+}
+
+button {
+    @include button;
+}
+/********************* END BLOC INTRO ***************/
+
+/********************* BLOC SKILLS ***************/
+.block-skills {
+    background-color: #00A1A1;
+
+    .card-skills {
+        padding: 1em;
+        margin: 2em;
+    }
+}
+
+.title-block {
+    @include title-block;
+}
+
+.p-skills {
+    font-family: 'Shrikhand';
+}
+
+.lists-languages {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.list-skills-li {
+    padding: 2em;
+}
+/********************* END BLOC SKILLS ***************/
+
+/********************* BLOC TRAINING ***************/
+.block-training {
+    background-color: aqua;
+}
+
+.resume-section-content {
+    padding: 0.5em;
+    margin: 2em;
+}
+
+.card-resume {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 2.5em;
+}
+
+.title-resume {
+    
+}
+
+.text-date-resume {
+    flex-shrink: 0;
+}
+/********************* END BLOC TRAINING ***************/
+
+
+/********************* BLOC PORTFOLIO ***************/
+.portfolio {
+    background-color: burlywood;
+}
+
+/********************* END BLOC PORTFOLIO ***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* MEDIA QUERIES  ***************/
+@media screen and (min-width: 60em) {
+
+    .menu-toggle,
+    .menu-checkbox {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        flex-basis: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .card-image {
+        flex-direction: column;
+    }
+
+    .lists-languages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-section-content {
+        
+    }
+
+    .card-resume {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .title-resume {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        
+    }
+
+}
+
+/********************* END MEDIA QUERIES ***************/
