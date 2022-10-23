@@ -53,7 +53,7 @@ body {
 
 /********************* BLOC INTRO ***************/
 .block-presentation {
-    background-color: #F6F6F6;
+    background-color: #f8c536;
 }
 
 .container-presentation {
@@ -97,7 +97,8 @@ button {
 
 /********************* BLOC SKILLS ***************/
 .block-skills {
-    background-color: #00A1A1;
+    background-color: #e0e0e09e;
+    padding: 1em;
 
     .card-skills {
         padding: 1em;
@@ -125,6 +126,8 @@ button {
 }
 .box-workflow {
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 .list-workflow {
@@ -135,7 +138,8 @@ button {
 
 /********************* BLOC TRAINING ***************/
 .block-training {
-    background-color: aqua;
+    background-color: #e0e0e09e;
+    padding: 1em;
 }
 
 .resume-section-content {
@@ -163,8 +167,8 @@ button {
 
 /*block Restaurants*/
 .portfolio {
-    background-color: burlywood;
-    padding-bottom: 1px;
+    background-color: #e0e0e09e;
+    padding-top: 2em;
     max-width: 1700px;
     margin: auto;
 }
@@ -193,7 +197,7 @@ button {
     }
 
     .background-img {
-        background-image: url("/images/cats.jpeg");
+        background-image: url("/images/projet2.png");
         background-size: cover;
         background-position: center;
         height: 300px;
@@ -208,15 +212,27 @@ button {
 
 
         &.background-img-2 {
-            background-image: url("/images/cats.jpeg");
+            background-image: url("/images/projet3.png");
         }
 
         &.background-img-3 {
-            background-image: url("/images/cats.jpeg");
+            background-image: url("/images/projet4.png");
         }
 
         &.background-img-4 {
-            background-image: url("/images/cats.jpeg");
+            background-image: url("/images/projet5.png");
+        }
+
+        &.background-img-5 {
+            background-image: url("/images/projet6.png");
+        }
+
+        &.background-img-6 {
+            background-image: url("/images/projet7.png");
+        }
+
+        &.background-img-7 {
+            background-image: url("/images/projet8.png");
         }
     }
 
@@ -343,6 +359,14 @@ button {
         padding: 2em;
     }
 
+    .card-skills {
+        margin: 0.1em !important;
+    }
+
+    .box-workflow {
+        flex-direction: column;
+    }
+
     .lists-languages {
         display: flex;
         flex-direction: column;
@@ -355,6 +379,7 @@ button {
         flex-direction: column;
         align-items: center;
         margin: auto;
+        padding-top: 25px;
     }
 
     .title-resume {
