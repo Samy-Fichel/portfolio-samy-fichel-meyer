@@ -84,6 +84,11 @@ body {
   font-family: "Roboto";
 }
 
+.container-button {
+  text-align: center;
+  padding: 1.2em;
+}
+
 button {
   border-radius: 25px;
   border: none;
@@ -133,6 +138,14 @@ button.btn-intro:hover {
   padding: 2em;
 }
 
+.box-workflow {
+  list-style-type: none;
+}
+
+.list-workflow {
+  padding: 1em;
+}
+
 /********************* END BLOC SKILLS ***************/
 /********************* BLOC TRAINING ***************/
 .block-training {
@@ -157,11 +170,137 @@ button.btn-intro:hover {
 
 /********************* END BLOC TRAINING ***************/
 /********************* BLOC PORTFOLIO ***************/
+/*block Restaurants*/
 .portfolio {
   background-color: burlywood;
+  padding-bottom: 1px;
+  max-width: 1700px;
+  margin: auto;
 }
 
+.title-restaurants {
+  margin: 0.8em;
+  margin-top: 1.5em;
+  padding-top: 50px;
+}
+
+.container-restaurants {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-restaurants .card {
+  padding-bottom: 30px;
+  width: 40%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: auto;
+}
+.container-restaurants .text-href-card {
+  text-decoration: none;
+}
+.container-restaurants .background-img {
+  background-image: url("/images/cats.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: 0.25s ease;
+}
+.container-restaurants .background-img:hover {
+  background-size: 714px;
+}
+.container-restaurants .background-img.background-img-2 {
+  background-image: url("/images/cats.jpeg");
+}
+.container-restaurants .background-img.background-img-3 {
+  background-image: url("/images/cats.jpeg");
+}
+.container-restaurants .background-img.background-img-4 {
+  background-image: url("/images/cats.jpeg");
+}
+.container-restaurants .nouveau {
+  background-color: #99E2D0;
+  color: #1b6150;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  padding: 9px 10px 9px 10px;
+  border-radius: 2px;
+  font-weight: 400;
+}
+.container-restaurants .box-texts {
+  line-height: 10px;
+}
+.container-restaurants .box-texts h3 {
+  padding-left: 20px;
+  color: black;
+  font-weight: 600;
+  line-height: 10px;
+}
+.container-restaurants .box-texts .text-card {
+  padding-left: 20px;
+  color: black;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* end block-restaurants*/
 /********************* END BLOC PORTFOLIO ***************/
+/********************* FOOTER ***************/
+.container-footer {
+  background-color: #353535;
+  padding: 20px 0;
+}
+
+.logo-footer {
+  font-family: "Shrikhand";
+  color: white;
+  margin: 40px;
+}
+
+.box-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list-footer {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+
+.icon-footer {
+  width: 1em;
+  padding-right: 15px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1.1em;
+}
+
+.link-social-network {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+/********************* END FOOTER ***************/
 /********************* MEDIA QUERIES  ***************/
 @media screen and (min-width: 60em) {
   .menu-toggle,
@@ -181,6 +320,7 @@ button.btn-intro:hover {
 @media screen and (max-width: 60em) {
   .card-image {
     flex-direction: column;
+    padding: 2em;
   }
   .lists-languages {
     display: flex;
@@ -196,6 +336,19 @@ button.btn-intro:hover {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+  }
+  .container-restaurants {
+    flex-direction: column;
+  }
+  .card {
+    width: 90% !important;
+  }
+  .box-footer {
+    flex-direction: column;
+  }
+  .list-footer {
+    line-height: 2.5em;
+    font-size: 20px;
   }
 }
 /********************* END MEDIA QUERIES ***************/
