@@ -21,7 +21,8 @@ body {
 }
 
 .menu li a:hover {
-  color: red;
+  color: #9c410b;
+  font-weight: bold;
 }
 
 .menu-checkbox:checked ~ .menu {
@@ -47,14 +48,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: rgba(248, 197, 54, 0.7882352941);
   padding: 1em;
 }
 
 /********************* END HEADER MENU ***************/
 /********************* BLOC INTRO ***************/
-.block-presentation {
-  background-color: #f8c536;
+#Accueil {
+  background-color: rgba(248, 197, 54, 0.431372549);
 }
 
 .container-presentation {
@@ -95,8 +96,8 @@ button {
   color: white;
   font-size: 16px;
   font-weight: 600;
-  background: linear-gradient(0.5deg, #376ca8, #5e75d4);
-  background-color: #00a7f8;
+  background: linear-gradient(0.5deg, #829ab6, #304ecb);
+  background-color: #000000;
   height: 40px;
   width: 9em;
   font-family: "Roboto";
@@ -109,11 +110,11 @@ button.btn-intro:hover {
 
 /********************* END BLOC INTRO ***************/
 /********************* BLOC SKILLS ***************/
-.block-skills {
-  background-color: rgba(224, 224, 224, 0.6196078431);
+#Competences {
+  background-color: rgba(248, 197, 54, 0.7882352941);
   padding: 1em;
 }
-.block-skills .card-skills {
+#Competences .card-skills {
   padding: 1em;
   margin: 2em;
 }
@@ -138,21 +139,53 @@ button.btn-intro:hover {
 .list-skills-li {
   padding: 2em;
 }
+.list-skills-li .fa-html5 {
+  color: #f07021;
+}
+.list-skills-li .fa-css3-alt {
+  color: #007ac7;
+}
+.list-skills-li .fa-sass {
+  color: #ce679b;
+}
+.list-skills-li .fa-bootstrap {
+  color: #7212ef;
+}
+.list-skills-li .fa-wordpress {
+  color: #32373c;
+}
+.list-skills-li .fa-git {
+  color: #3e2f01;
+}
 
 .box-workflow {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  padding-top: 1em;
 }
 
 .list-workflow {
-  padding: 1em;
+  color: black;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+.fa-sharp {
+  color: #78746c;
 }
 
 /********************* END BLOC SKILLS ***************/
 /********************* BLOC TRAINING ***************/
-.block-training {
-  background-color: rgba(224, 224, 224, 0.6196078431);
+#Experiences-Professionnelles {
+  background-color: white;
+  background-image: url("/images/lines-h2-bg.png");
+  padding: 1em;
+}
+
+#Formations {
+  background-color: white;
+  background-image: url("/images/lines-h2-bg.png");
   padding: 1em;
 }
 
@@ -168,6 +201,36 @@ button.btn-intro:hover {
   margin: 2.5em;
 }
 
+.title-h3-resume {
+  font-weight: 900;
+}
+
+.p-resume {
+  font-family: "Roboto";
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.p-date-resume {
+  font-family: "Roboto";
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.title-list-ul {
+  font-weight: bold;
+}
+
+.title-bloc-experiences {
+  margin-top: 3em;
+  font-weight: bold;
+}
+
+.experiences-lists {
+  padding: 0.5em;
+  list-style-type: disclosure-closed;
+}
+
 .text-date-resume {
   flex-shrink: 0;
 }
@@ -175,35 +238,38 @@ button.btn-intro:hover {
 /********************* END BLOC TRAINING ***************/
 /********************* BLOC PORTFOLIO ***************/
 /*block Restaurants*/
-.portfolio {
-  background-color: rgba(224, 224, 224, 0.6196078431);
+#Portfolio {
+  background-color: rgba(248, 197, 54, 0.7882352941);
   padding-top: 2em;
-  max-width: 1700px;
+  width: 100%;
   margin: auto;
 }
 
-.title-restaurants {
-  margin: 0.8em;
-  margin-top: 1.5em;
-  padding-top: 50px;
+.title-block {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 2em;
 }
 
-.container-restaurants {
+.container-portfolio {
   color: black;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 2.2em;
+  width: 80%;
+  margin: auto;
 }
-.container-restaurants .card {
+.container-portfolio .card {
   padding-bottom: 30px;
   width: 40%;
   box-sizing: border-box;
   border-radius: 20px;
   margin: auto;
 }
-.container-restaurants .text-href-card {
+.container-portfolio .text-href-card {
   text-decoration: none;
 }
-.container-restaurants .background-img {
+.container-portfolio .background-img {
   background-image: url("/images/projet2.png");
   background-size: cover;
   background-position: center;
@@ -213,64 +279,54 @@ button.btn-intro:hover {
   border-top-right-radius: 20px;
   transition: 0.25s ease;
 }
-.container-restaurants .background-img:hover {
+.container-portfolio .background-img:hover {
   background-size: 714px;
 }
-.container-restaurants .background-img.background-img-2 {
+.container-portfolio .background-img.background-img-2 {
   background-image: url("/images/projet3.png");
 }
-.container-restaurants .background-img.background-img-3 {
+.container-portfolio .background-img.background-img-3 {
   background-image: url("/images/projet4.png");
 }
-.container-restaurants .background-img.background-img-4 {
+.container-portfolio .background-img.background-img-4 {
   background-image: url("/images/projet5.png");
 }
-.container-restaurants .background-img.background-img-5 {
+.container-portfolio .background-img.background-img-5 {
   background-image: url("/images/projet6.png");
 }
-.container-restaurants .background-img.background-img-6 {
+.container-portfolio .background-img.background-img-6 {
   background-image: url("/images/projet7.png");
 }
-.container-restaurants .background-img.background-img-7 {
+.container-portfolio .background-img.background-img-7 {
   background-image: url("/images/projet8.png");
 }
-.container-restaurants .nouveau {
-  background-color: #99E2D0;
-  color: #1b6150;
-  position: absolute;
-  top: 16px;
-  right: 10px;
-  padding: 9px 10px 9px 10px;
-  border-radius: 2px;
-  font-weight: 400;
-}
-.container-restaurants .box-texts {
+.container-portfolio .box-texts {
   line-height: 10px;
 }
-.container-restaurants .box-texts h3 {
+.container-portfolio .box-texts h3 {
   padding-left: 20px;
   color: black;
   font-weight: 600;
   line-height: 10px;
 }
-.container-restaurants .box-texts .text-card {
+.container-portfolio .box-texts .text-card {
   padding-left: 20px;
   color: black;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 18px;
 }
 
 /* end block-restaurants*/
 /********************* END BLOC PORTFOLIO ***************/
 /********************* FOOTER ***************/
-.container-footer {
-  background-color: #353535;
+#Contact {
+  background-color: rgba(248, 197, 54, 0.431372549);
   padding: 20px 0;
 }
 
 .logo-footer {
   font-family: "Shrikhand";
-  color: white;
+  color: black;
   margin: 40px;
 }
 
@@ -282,11 +338,12 @@ button.btn-intro:hover {
 .list-footer {
   list-style-type: none;
   line-height: 1.5em;
+  font-weight: bold;
 }
 
 .link-footer {
   text-decoration: none;
-  color: white;
+  color: black;
   font-style: normal;
 }
 
@@ -303,17 +360,35 @@ button.btn-intro:hover {
 
 .link-social-network {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+.fa-linkedin {
+  color: rgb(59, 91, 152);
 }
 
 .copyright {
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   padding: 2em;
 }
 
 /********************* END FOOTER ***************/
+/*********************SCROLL TOP ***************/
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 0px;
+  bottom: 42px;
+  right: 10px;
+}
+
+#scroll_to_top img {
+  width: 25px;
+}
+
+/********************* END SCROLL TOP ***************/
 /********************* MEDIA QUERIES  ***************/
 @media screen and (min-width: 60em) {
   .menu-toggle,
@@ -328,6 +403,7 @@ button.btn-intro:hover {
   }
   .menu li {
     display: inline-block;
+    font-weight: bold;
   }
 }
 @media screen and (max-width: 60em) {
@@ -357,11 +433,15 @@ button.btn-intro:hover {
     flex-direction: column;
     align-items: baseline;
   }
-  .container-restaurants {
+  .container-portfolio {
     flex-direction: column;
+    width: 95%;
   }
   .card {
     width: 90% !important;
+  }
+  .list-workflow {
+    margin: 0.5em;
   }
   .box-footer {
     flex-direction: column;

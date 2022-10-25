@@ -15,11 +15,12 @@ body {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    color: black;
+    color: $color-black;
 }
 
 .menu li a:hover {
-    color: red;
+    color: #9c410b;
+    font-weight: bold;
 }
 
 .menu-checkbox:checked~.menu {
@@ -45,15 +46,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color: $primary-color;
     padding: 1em;
 }
 
 /********************* END HEADER MENU ***************/
 
 /********************* BLOC INTRO ***************/
-.block-presentation {
-    background-color: #f8c536;
+#Accueil {
+    background-color: $secondary-color;
 }
 
 .container-presentation {
@@ -96,8 +97,8 @@ button {
 /********************* END BLOC INTRO ***************/
 
 /********************* BLOC SKILLS ***************/
-.block-skills {
-    background-color: #e0e0e09e;
+#Competences {
+    background-color: $primary-color;
     padding: 1em;
 
     .card-skills {
@@ -123,24 +124,64 @@ button {
 
 .list-skills-li {
     padding: 2em;
+
+    .fa-html5 {
+        color: #f07021;
+    }
+
+    .fa-css3-alt {
+        color: #007ac7;
+    }
+
+    .fa-sass {
+        color: #ce679b;
+    }
+
+    .fa-bootstrap {
+        color: #7212ef;
+    }
+
+    .fa-wordpress {
+        color: #32373c;
+    }
+
+    .fa-git {
+        color: #3e2f01;
+    }
 }
+
 .box-workflow {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding-top: 1em;
 }
 
 .list-workflow {
-    padding: 1em;
+    color: $color-black;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+.fa-sharp {
+    color: #78746c;
 }
 
 /********************* END BLOC SKILLS ***************/
 
 /********************* BLOC TRAINING ***************/
-.block-training {
-    background-color: #e0e0e09e;
+#Experiences-Professionnelles {
+    background-color: $color-white;
+    background-image: url("/images/lines-h2-bg.png");
     padding: 1em;
 }
+
+#Formations {
+    background-color: $color-white;
+    background-image: url("/images/lines-h2-bg.png");
+    padding: 1em;
+}
+
 
 .resume-section-content {
     padding: 0.5em;
@@ -154,7 +195,36 @@ button {
     margin: 2.5em;
 }
 
-.title-resume {}
+.title-h3-resume {
+    font-weight: 900;
+}
+
+.p-resume {
+    font-family: $font-family;
+    font-size: 1.1em;
+    font-weight: 500
+}
+
+.p-date-resume {
+    font-family: $font-family;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+
+.title-list-ul {
+    font-weight: bold;
+}
+
+.title-bloc-experiences {
+    margin-top: 3em;
+    font-weight: bold;
+}
+
+.experiences-lists {
+    padding: 0.5em;
+    list-style-type: disclosure-closed;
+}
 
 .text-date-resume {
     flex-shrink: 0;
@@ -166,23 +236,24 @@ button {
 /********************* BLOC PORTFOLIO ***************/
 
 /*block Restaurants*/
-.portfolio {
-    background-color: #e0e0e09e;
+#Portfolio {
+    background-color: #f8c536c9;
     padding-top: 2em;
-    max-width: 1700px;
+    width: 100%;
     margin: auto;
 }
 
-.title-restaurants {
-    margin: 0.8em;
-    margin-top: 1.5em;
-    padding-top: 50px;
+.title-block {
+    @include title-block;
 }
 
-.container-restaurants {
-    color: black;
+.container-portfolio {
+    color: $color-black;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 2.2em;
+    width: 80%;
+    margin: auto;
 
     .card {
         padding-bottom: 30px;
@@ -236,32 +307,20 @@ button {
         }
     }
 
-
-    .nouveau {
-        background-color: $tertiary-color;
-        color: #1b6150;
-        position: absolute;
-        top: 16px;
-        right: 10px;
-        padding: 9px 10px 9px 10px;
-        border-radius: 2px;
-        font-weight: 400;
-    }
-
     .box-texts {
         line-height: 10px;
 
         h3 {
             padding-left: 20px;
-            color: black;
+            color: $color-black;
             font-weight: 600;
             line-height: 10px;
         }
 
         .text-card {
             padding-left: 20px;
-            color: black;
-            font-weight: 300;
+            color: $color-black;
+            font-weight: bold;
             font-size: 18px;
         }
     }
@@ -271,16 +330,15 @@ button {
 /* end block-restaurants*/
 /********************* END BLOC PORTFOLIO ***************/
 
-
 /********************* FOOTER ***************/
-.container-footer {
-    background-color: #353535;
+#Contact {
+    background-color: $secondary-color;
     padding: 20px 0;
 }
 
 .logo-footer {
     font-family: 'Shrikhand';
-    color: #ffff;
+    color: $color-black;
     margin: 40px;
 }
 
@@ -292,11 +350,12 @@ button {
 .list-footer {
     list-style-type: none;
     line-height: 1.5em;
+    font-weight: bold;
 }
 
 .link-footer {
     text-decoration: none;
-    color: #ffff;
+    color: $color-black;
     font-style: normal;
 }
 
@@ -314,11 +373,15 @@ button {
 
 .link-social-network {
     text-decoration: none;
-    color: white;
+    color: $color-black;
+}
+
+.fa-linkedin {
+    color: rgb(59, 91, 152);
 }
 
 .copyright {
-    color: #ffff;
+    color: $color-black;
     display: flex;
     justify-content: center;
     padding: 2em;
@@ -326,92 +389,17 @@ button {
 
 /********************* END FOOTER ***************/
 
-
-
-
-
-
-
-
-/********************* MEDIA QUERIES  ***************/
-@media screen and (min-width: 60em) {
-
-    .menu-toggle,
-    .menu-checkbox {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-        flex-basis: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-    .menu li {
-        display: inline-block;
-    }
+/*********************SCROLL TOP ***************/
+#scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 0px;
+    bottom: 42px;
+    right: 10px;
 }
 
-@media screen and (max-width: 60em) {
-    .card-image {
-        flex-direction: column;
-        padding: 2em;
-    }
-
-    .card-skills {
-        margin: 0.1em !important;
-    }
-
-    .box-workflow {
-        flex-direction: column;
-    }
-
-    .lists-languages {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .resume-section-content {}
-
-    .card-resume {
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        padding-top: 25px;
-    }
-
-    .title-resume {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-
-    }
-
-    .container-restaurants {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 90% !important;
-    }
-
-    // .button {
-    //     padding: 1.2em;
-    //     display: flex;
-    //     justify-content: center;
-    // }
-
-    .box-footer {
-        flex-direction: column;
-    }
-
-    .list-footer {
-        line-height: 2.5em;
-        font-size: 20px;
-    }
-
+#scroll_to_top img {
+    width: 25px;
 }
 
-/********************* END MEDIA QUERIES ***************/
+/********************* END SCROLL TOP ***************/

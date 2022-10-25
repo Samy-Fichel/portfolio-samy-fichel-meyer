@@ -1,0 +1,80 @@
+/********************* MEDIA QUERIES  ***************/
+@media screen and (min-width: 60em) {
+
+    .menu-toggle,
+    .menu-checkbox {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        flex-basis: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        display: inline-block;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .card-image {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .card-skills {
+        margin: 0.1em !important;
+    }
+
+    .box-workflow {
+        flex-direction: column;
+    }
+
+    .lists-languages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-resume {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    .title-resume {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+    }
+
+    .container-portfolio {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .card {
+        width: 90% !important;
+    }
+
+    .list-workflow {
+        margin: 0.5em;
+    }
+
+    .box-footer {
+        flex-direction: column;
+    }
+
+    .list-footer {
+        line-height: 2.5em;
+        font-size: 20px;
+    }
+
+}
+
+/********************* END MEDIA QUERIES ***************/

@@ -19,20 +19,20 @@
     <nav class="main-navigation">
       <div class="nav-wrapper">
         <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-        <label for="menu-checkbox" class="menu-toggle">≡ Show Menu</label>
+        <label for="menu-checkbox" class="menu-toggle">≡ Menu</label>
         <ul class="menu">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Compétences</a></li>
-          <li><a href="#">Formations</a></li>
-          <li><a href="#">Expériences Professionnels</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#Accueil">Accueil</a></li>
+          <li><a href="#Competences">Compétences</a></li>
+          <li><a href="#Experiences-Professionnelles">Expériences Professionnelles</a></li>
+          <li><a href="#Formations">Formations</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <section class="block-presentation">
+    <section id="Accueil">
       <div class="card-image">
         <img class="img-portrait" src="/images/portrait.jpeg" alt="portrait photo de Samy Fichel Meyer">
         <h1 class="title-intro">
@@ -41,15 +41,15 @@
           Webdesigner
         </h1>
         <div>
-          <button class="btn-intro">En savoir plus</button>
+          <button class="btn-intro" type="button"
+          onclick=" window.open('./images/cv-samy-fichel-meyer.pdf', '_blank');">CV À TÉLÉCHARGER</button>
         </div>
       </div>
     </section>
-
-    <section class="block-skills">
+    <section id="Competences">
       <div class="card-skills">
         <h2 class="title-block">COMPÉTENCES</h2>
-        <p class="p-skills">PROGRAMMING LANGUAGES & TOOLS</p>
+        <p class="p-skills">LANGAGES ET OUTILS DE PROGRAMMATION</p>
         <ul class="lists-languages">
           <li class="list-skills-li">
             <i class="fa-brands fa-html5 fa-fw fa-3x"></i>
@@ -70,222 +70,353 @@
             <i class="fa-brands fa-git fa-fw fa-3x"></i>
           </li>
         </ul>
-        <p>WORKFLOW</p>
+        <p class="p-skills">SOFT SKILLS</p>
         <ul class="box-workflow">
-          <li><i class="list-workflow fa-solid fa-square-check"></i>lorem ipsum dolor sit amet</li>
-          <li><i class="list-workflow fa-solid fa-square-check"></i>lorem ipsum dolor sit amet</li>
-          <li><i class="list-workflow fa-solid fa-square-check"></i>lorem ipsum dolor sit amet</li>
-        </ul>
-        <ul class="box-workflow">
-          <li><i class="list-workflow fa-solid fa-square-check"></i>lorem ipsum dolor sit amet</li>
-          <li><i class="list-workflow fa-solid fa-square-check"></i>lorem ipsum dolor sit amet</li>
-          <li><i class="list-workflow fa-solid fa-square-check"></i>lorem ipsum dolor sit amet</li>
+          <li class="list-workflow"><i class=" list-workflow fa-sharp fa-solid fa-circle-check"></i>Sérieux</li>
+          <li class="list-workflow"><i class=" list-workflow fa-sharp fa-solid fa-circle-check"></i>Détermination</li>
+          <li class="list-workflow"><i class="list-workflow fa-sharp fa-solid fa-circle-check"></i>Adaptation</li>
+          <li class="list-workflow"><i class="list-workflow fa-sharp fa-solid fa-circle-check"></i>Autonomie</li>
+          <li class="list-workflow"><i class="list-workflow fa-sharp fa-solid fa-circle-check"></i>Créativité</li>
+          <li class="list-workflow"><i class="list-workflow fa-sharp fa-solid fa-circle-check"></i>Observation</li>
         </ul>
       </div>
     </section>
-
-    <section class="block-training">
+    <section id="Experiences-Professionnelles">
       <div class="resume-section-content">
-        <h2 class="title-block">EXPÉRIENCES PROFESSIONNELS</h2>
+        <h2 class="title-block">EXPÉRIENCES PROFESSIONNELLES</h2>
         <div class="card-resume">
           <div class="title-resume">
-            <h3 class="">JUNIOR Web Developer</h3>
-            <div class="">Intelitec Solutions</div>
-            <p>
-              Bring to the table win-win survival strategies to ensure
-              proactive domination. At the end of the day, going forward, a
-              new normal that has evolved from generation X is on the runway
+            <h3 class="title-h3-resume">Photographe et Conception Lumière</h3>
+            <p class="p-resume">
+              Stage chez M.G - Mulhouse
             </p>
-          </div>
-          <div class="text-date-resume">
-            <span class="">March 2013 - Present</span>
+            <p class="p-date-resume">
+              2019 - 2019
+            </p>
+            <p class="title-bloc-experiences">TECHNIQUE VIDÉO</p>
+            <ul>
+              <li class="experiences-lists">Premiere Pro</li>
+              <li class="experiences-lists">Tournage et montage de vidéos courtes lors d'un salon photographique
+                présentant les dernières nouveautés sur le matériel photographique </li>
+              <li class="experiences-lists">Apprentissage du logiciel Final Cut Pro X</li>
+              <li class="experiences-lists"> Préparation et mise en place du matériel vidéographiques professionnel</li>
+            </ul>
+
+            <p class="title-bloc-experiences">TECHNIQUE PHOTO</p>
+            <ul>
+              <li class="experiences-lists">Apprentissage du logiciel de bridge CC + caméra RAW pour la retouche
+                d’images</li>
+              <li class="experiences-lists"> Apprentissage sur la technique photographique (ombre portée, lumière
+                diffuse)</li>
+              <li class="experiences-lists">Travail sur les images (retouche d'image, amélioration de la colorimétrie,
+                diaphragme, vitesse) </li>
+              <li class="experiences-lists">Utilisation du logiciel Photoshop pour la gestion des images </li>
+            </ul>
+
+            <p class="title-bloc-experiences">DESIGN</p>
+            <ul>
+              <li class="experiences-lists">Utiliser le logiciel InDesign</li>
+            </ul>
           </div>
         </div>
         <div class="card-resume">
-          <div>
-            <h3 class="title-resume">SENIOR Web Developer</h3>
-            <div class="">Intelitec Solutions</div>
-            <p>
-              Bring to the table win-win survival strategies to ensure
-              proactive domination. At the end of the day, going forward, a
-              new normal that has evolved from generation X is on the runway
-            </p>
-          </div>
-          <div class="text-date-resume">
-            <span class="">March 2013 - Present</span>
+          <div class="title-resume">
+            <h3 class="title-h3-resume">Webmaster au sein d'une agence en solution graphique</h3>
+            <p class="p-resume">Stage chez Comm'Design - Wittenheim</p>
+            <p class="p-date-resume">2018 - 2018</p>
+            <p class="title-bloc-experiences">DÉVELOPPEMENT WEB</p>
+            <ul>
+              <li class="experiences-lists">Création de site web</li>
+              <li class="experiences-lists">Apprentissage du logiciel Muse CC</li>
+              <li class="experiences-lists">Mise en place de WordPress sur un système d’exploitation</li>
+              <li class="experiences-lists"> Collaboration à la création d’un site web e-commerce sur le CMS WordPress
+              </li>
+            </ul>
+
+            <p class="title-bloc-experiences">DESIGN</p>
+            <ul>
+              <li class="experiences-lists">Apprentissage du logiciel InDesign</li>
+              <li class="experiences-lists">Apprentissage du logiciel Illustrator</li>
+              <li class="experiences-lists">Création de logo</li>
+              <li class="experiences-lists">Création de flyer</li>
+              <li class="experiences-lists">Formation sur le graphisme</li>
+            </ul>
+            <p class="title-bloc-experiences">RELATION CLIENT</p>
+            <ul>
+              <li class="experiences-lists">Public relation pour une salle de sport</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="block-training">
+    <section id="Formations">
       <div class="resume-section-content">
         <h2 class="title-block">FORMATIONS</h2>
         <div class="card-resume">
           <div class="title-resume">
-            <h3 class="">JUNIOR Web Developer</h3>
-            <div class="">BACHELOR OF SCIENCE</div>
-            <p>
-              Bring to the table win-win survival strategies to ensure
-              proactive domination. At the end of the day, going forward, a
-              new normal that has evolved from generation X is on the runway
-            </p>
-            <p>GPA: 3.23</p>
-          </div>
-          <div class="text-date-resume">
-            <span class="">March 2013 - Present</span>
+            <h3 class="title-h3-resume">Développeur intégrateur web de niveau 5 &nbsp; (RNCP : 36076)</h3>
+            <div class="box-title-resume">
+              <p class="p-resume">
+                OPENCLASSROOMS PARIS
+              </p>
+              <p class="p-date-resume">
+                2020 - 2022
+              </p>
+            </div>
+            <p>Projets validés lors de la formation</p>
+            <ul>
+              <li class="experiences-lists">Prenez en main votre formation de développeur web</li>
+              <li class="experiences-lists">Transformez une maquette en site web avec HTML & CSS</li>
+              <li class="experiences-lists">Dynamisez une page web avec des animations CSS</li>
+              <li class="experiences-lists">Optimisez un site web existant</li>
+              <li class="experiences-lists">Construisez un site e-commerce en JavaScript</li>
+              <li class="experiences-lists">Construisez une API sécurisée pour une application d'avis gastronomiques
+              </li>
+              <li class="experiences-lists">Créez un réseau social d’entreprise</li>
+            </ul>
           </div>
         </div>
         <div class="card-resume">
-          <div>
-            <h3 class="title-resume">SENIOR Web Developer</h3>
-            <div class="">Intelitec Solutions</div>
-            <p>
-              Bring to the table win-win survival strategies to ensure
-              proactive domination. At the end of the day, going forward, a
-              new normal that has evolved from generation X is on the runway
-            </p>
+          <div class="title-resume">
+            <h3 class="title-h3-resume">Ligne numérique / KMø Mulhouse</h3>
+            <p class="p-resume">Étudiant (La créa) Photographie / Vidéographie</p>
+            <p class="p-date-resume">2019 - 2020</p>
+            <p class="title-bloc-experiences">DÉVELOPPEMENT WEB</p>
+            <ul>
+              <li class="experiences-lists">Adobe Xd : utilisé dans le cadre d'une création de maquette destinée à un
+                site web</li>
+            </ul>
+            <p class="title-bloc-experiences">TECHNIQUE PHOTO</p>
+            <ul>
+              <li class="experiences-lists">Photo : shooting photo</li>
+              <li class="experiences-lists">Photoshop (retouche d'images, montage photographique, utilisation de courbe
+                de Bézier)</li>
+            </ul>
+            <p class="title-bloc-experiences">TECHNIQUE VIDÉO</p>
+            <ul>
+              <li class="experiences-lists">Tournage d'une vidéo de présentation, montage vidéo sur le logiciel Premiere
+                Pro</li>
+              <li class="experiences-lists">Création de différents projets vidéographiques dans le contexte de la
+                formation sur le logiciel Adobe Premiere Pro
+              </li>
+            </ul>
+            <p class="title-bloc-experiences">DESIGN</p>
+            <ul>
+              <li class="experiences-lists">InDesign : utilisé à l'occasion de la création d'un Curriculum vitæ</li>
+              <li class="experiences-lists">Webdesign : Création d'une maquette (site web) interactive sur le logiciel
+                Adobe Xd dans le cadre de la création d'un jeu de plateau</li>
+              <li class="experiences-lists">Graphisme : Création d'un logo de groupe, création d'affiche de film et
+                d'une pochette d'album de musique (fictif) dans le cadre de la formation</li>
+              <li class="experiences-lists">Création de projets en groupe (montage photo, montage vidéo, création d'une
+                maquette d'un site web)</li>
+            </ul>
           </div>
-          <div class="text-date-resume">
-            <span class="">March 2013 - Present</span>
+        </div>
+        <div class="card-resume">
+          <div class="title-resume">
+            <h3 class="title-h3-resume">L'École Multimédia </h3>
+            <p class="p-resume">Développeur multimédia PARIS</p>
+            <p class="p-date-resume">2017 - 2019</p>
+            <p class="title-bloc-experiences">DÉVELOPPEMENT WEB</p>
+            <ul>
+              <li class="experiences-lists">Projets personnels de site avec WordPress</li>
+              <li class="experiences-lists">Apprentissage des langages HTML/CSS/Bootstrap</li>
+              <li class="experiences-lists">Apprentissage et utilisation d'outils de référencement pour le web/ SEO</li>
+              <li class="experiences-lists">Création d'un moodboard </li>
+              <li class="experiences-lists">Création d'une maquette graphique (zoning et wireframe) sur le logiciel
+                Photoshop</li>
+            </ul>
+
+            <p class="title-bloc-experiences">ÉTUDES ET DÉVELOPPEMENT</p>
+            <ul>
+              <li class="experiences-lists">Études et analyses de différents médias interactifs (sujet sélectionné : les
+                lentilles connectées) </li>
+              <li class="experiences-lists">Création d'un GIF animé sur le logiciel Photoshop</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-resume">
+          <div class="title-resume">
+            <h3 class="title-h3-resume">CNFDI</h3>
+            <p class="p-resume">Formation Internet - Webmaster Brunoy</p>
+            <p class="p-date-resume">2015 - 2017</p>
+            <p class="title-bloc-experiences">INTERNET WEBMASTER</p>
+            <ul>
+              <li class="experiences-lists">Internet</li>
+              <li class="experiences-lists">Le commerce électronique</li>
+              <li class="experiences-lists">Approfondir Outlook</li>
+              <li class="experiences-lists">Le droit et Internet</li>
+              <li class="experiences-lists">Les réseaux</li>
+              <li class="experiences-lists">L'imagerie numérique</li>
+              <li class="experiences-lists">Programmation HTML (1)</li>
+              <li class="experiences-lists">Programmation HTML (2)</li>
+              <li class="experiences-lists">CSS (1)</li>
+              <li class="experiences-lists">CSS (2)</li>
+              <li class="experiences-lists">Création de sites avec Dreamweaver CC : Introduction</li>
+              <li class="experiences-lists"> Création de sites avec Dreamweaver CC : CSS et conteneurs</li>
+              <li class="experiences-lists">Création de sites avec Dreamweaver CC : Application, transitions CSS et FTP
+              </li>
+              <li class="experiences-lists">Création de sites avec Dreamweaver CC : Liens et codes</li>
+              <li class="experiences-lists"> Création de sites avec Dreamweaver CC : Formulaires et actif</li>
+              <li class="experiences-lists">Création de sites avec Dreamweaver CC : Bootstrap et responsive</li>
+              <li class="experiences-lists">Les bases de données ACCESS et MySQL</li>
+              <li class="experiences-lists">Découvrir le PHP et MySQL</li>
+              <li class="experiences-lists">Découverte de PHP et MySQL</li>
+              <li class="experiences-lists">Découvrir le PHP</li>
+              <li class="experiences-lists">Aller plus loin avec PHP</li>
+              <li class="experiences-lists">Le référencement</li>
+              <li class="experiences-lists"> Le langage JAVA</li>
+              <li class="experiences-lists">WordPress - Présentation</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-      <section class="portfolio">
-        <h2 class="title-block">PORTFOLIO</h2>
-        <div class="container-restaurants">
-          <div class="card">
-            <a href="./menu/la-palette-du-gout.html" class="text-href-card">
-              <div class="background-img">
-              </div>
-              <div class="box-texts">
-                <h3>Reservia</h3>
-                <span class="text-card">Projet 2</span>
-              </div>
-            </a>
-            <div class="container-button">
-              <button>GITHUB</button>
+    <section id="Portfolio">
+      <h2 class="title-block">PORTFOLIO</h2>
+      <div class="container-portfolio">
+        <div class="card">
+          <a href="https://samy-fichel.github.io/FichelSamy_02_04122020/" target="_blank" class="text-href-card">
+            <div class="background-img">
             </div>
-          </div>
-          <div class="card">
-            <a href="./menu/la-note-enchantée.html" class="text-href-card">
-              <div class="background-img background-img-2">
-              </div>
-              <div class="box-texts">
-                <h3>La note enchantée</h3>
-                <span class="text-card">Charonne</span>
-              </div>
-            </a>
-            <div class="container-button">
-              <button>GITHUB</button>
+            <div class="box-texts">
+              <h3>Reservia</h3>
+              <span class="text-card">Projet 2</span>
             </div>
-          </div>
-          <div class="card">
-            <a href="./menu/a-la-francaise.html" class="text-href-card">
-              <div class="background-img background-img-3"></div>
-              <div class="box-texts">
-                <h3>À la française</h3>
-                <span class="text-card">Cité Rouge</span>
-              </div>
-            </a>
-            <div class="container-button">
-              <button>GITHUB</button>
-            </div>
-          </div>
-          <div class="card">
-            <a href="./menu/le-delice-des-sens.html" class="text-href-card">
-              <div class="background-img background-img-4"></div>
-              <div class="box-texts">
-                <h3>Le délice des sens</h3>
-                <span class="text-card">Folie-Méricourt</span>
-              </div>
-            </a>
-            <div class="container-button">
-              <button>GITHUB</button>
-            </div>
-          </div>
-          <div class="card">
-            <a href="./menu/le-delice-des-sens.html" class="text-href-card">
-              <div class="background-img background-img-5"></div>
-              <div class="box-texts">
-                <h3>Le délice des sens</h3>
-                <span class="text-card">Folie-Méricourt</span>
-              </div>
-            </a>
-            <div class="container-button">
-              <button>GITHUB</button>
-            </div>
-          </div>
-          <div class="card">
-            <a href="./menu/le-delice-des-sens.html" class="text-href-card">
-              <div class="background-img background-img-6"></div>
-              <div class="box-texts">
-                <h3>Le délice des sens</h3>
-                <span class="text-card">Folie-Méricourt</span>
-              </div>
-            </a>
-            <div class="container-button">
-              <button>GITHUB</button>
-            </div>
-          </div>
-          <div class="card">
-            <a href="./menu/le-delice-des-sens.html" class="text-href-card">
-              <div class="background-img background-img-7"></div>
-              <div class="box-texts">
-                <h3>Le délice des sens</h3>
-                <span class="text-card">Folie-Méricourt</span>
-              </div>
-            </a>
-            <div class="container-button">
-              <button>GITHUB</button>
-            </div>
+          </a>
+          <div class="container-button">
+            <button type="button"
+              onclick=" window.open('https://github.com/Samy-Fichel/FichelSamy_02_04122020', '_blank');">GITHUB</button>
           </div>
         </div>
-      </section>
+        <div class="card">
+          <a href="https://samy-fichel.github.io/FichelSamy_03_10032021/" target="_blank" class="text-href-card">
+            <div class="background-img background-img-2">
+            </div>
+            <div class="box-texts">
+              <h3>Ohmyfood</h3>
+              <span class="text-card">Projet 3</span>
+            </div>
+          </a>
+          <div class="container-button">
+            <button type="button"
+              onclick=" window.open('https://github.com/Samy-Fichel/FichelSamy_03_10032021', '_blank');">GITHUB</button>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://samy-fichel.github.io/FichelSamy_04_13052021/" target="_blank" class="text-href-card">
+            <div class="background-img background-img-3"></div>
+            <div class="box-texts">
+              <h3>La chouette agence</h3>
+              <span class="text-card">Projet 4</span>
+            </div>
+          </a>
+          <div class="container-button">
+            <button type="button"
+              onclick=" window.open('https://github.com/Samy-Fichel/FichelSamy_04_13052021', '_blank');">GITHUB</button>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://github.com/Samy-Fichel/fichelsamy_05_30062021" target="_blank" class="text-href-card">
+            <div class="background-img background-img-4"></div>
+            <div class="box-texts">
+              <h3>Orinoco</h3>
+              <span class="text-card">Projet 5</span>
+            </div>
+          </a>
+          <div class="container-button">
+            <button type="button"
+              onclick=" window.open('https://github.com/Samy-Fichel/fichelsamy_05_30062021', '_blank');">GITHUB</button>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://github.com/Samy-Fichel/FichelSamy_06_13102021" target="_blank" class="text-href-card">
+            <div class="background-img background-img-5"></div>
+            <div class="box-texts">
+              <h3>Piiquante</h3>
+              <span class="text-card">Projet 6</span>
+            </div>
+          </a>
+          <div class="container-button">
+            <button type="button"
+              onclick=" window.open('https://github.com/Samy-Fichel/FichelSamy_06_13102021', '_blank');">GITHUB</button>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://github.com/Samy-Fichel/FichelSamy_07_27032022" target="_blank" class="text-href-card">
+            <div class="background-img background-img-6"></div>
+            <div class="box-texts">
+              <h3>Groupomania</h3>
+              <span class="text-card">Projet 7</span>
+            </div>
+          </a>
+          <div class="container-button">
+            <button type="button"
+              onclick=" window.open('https://github.com/Samy-Fichel/FichelSamy_07_27032022', '_blank');">GITHUB</button>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://samyfichelmeyer.fr" target="_blank" class="text-href-card">
+            <div class="background-img background-img-7"></div>
+            <div class="box-texts">
+              <h3>Portfolio</h3>
+              <span class="text-card">Projet 8</span>
+            </div>
+          </a>
+          <div class="container-button">
+            <button type="button" onclick=" window.open('https://samyfichelmeyer.fr', '_blank');">GITHUB</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <div class="container-footer">
+  <footer id="Contact">
+    <div>
       <span class="logo-footer">Samy Fichel Meyer</span>
       <ul class="box-footer">
         <li class="list-footer">
-          <a href="#" class="link-footer">
+          <a href="" class="link-footer">
             <i class="fa-solid fa-address-book icon-footer" aria-hidden="true"></i>
             Samy Fichel Meyer
           </a>
         </li>
         <li class="list-footer">
-          <a href="#" class="link-footer">
+          <a href="mailto:samyfichel@gmail.com" class="link-footer">
             <i class="fa-solid fa-at icon-footer" aria-hidden="true"></i>
             samyfichel@gmail.com
           </a>
         </li>
         <li class="list-footer">
-          <a href="#" class="link-footer">
+          <a href="tel:+33667357692" class="link-footer">
             <i class="fa-solid fa-phone icon-footer" aria-hidden="true"></i>
             06.67.35.76.92
           </a>
         </li>
         <li class="list-footer">
-          <a href="#" class="link-footer">
+          <a href="https://www.google.com/maps/place/Brunstatt,+68350+Brunstatt-Didenheim
+                   /@47.7165205,7.3119589,14z/data=!3m1!4b1!4m5!3m4!1s0x47919af772f70219:0x40a5fb99a393dd0!8m2!3d47.7229182!4d7.3191572"
+            target="_blank" class="link-footer">
             <i class="fa-solid fa-location-dot icon-footer" aria-hidden="true"></i>
             Brunstatt, France
           </a>
         </li>
       </ul>
       <div class="social-networks">
-        <a href="#" class="link-social-network">
+        <a href="https://www.linkedin.com/in/samf/" target="_blank" class="link-social-network">
           <i class="fa-brands fa-linkedin fa-3x"></i>
         </a>
-        <a href="#" class="link-social-network">
+        <a href="https://github.com/Samy-Fichel" target="_blank" class="link-social-network">
           <i class="fa-brands fa-github fa-3x"></i>
         </a>
       </div>
       <div class="copyright">
-        <p>Copyright © Your Website 2022</p>
+        <p>Copyright © samyfichelmeyer.fr 2022</p>
       </div>
     </div>
   </footer>
+  <div id="scroll_to_top">
+    <a href="#top"><img src="images/fleche-top.png" alt="Retourner en haut"></a>
+  </div>
 </body>
 
 </html>
