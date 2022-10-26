@@ -49,7 +49,6 @@ body {
     background-color: $primary-color;
     padding: 1em;
 }
-
 /********************* END HEADER MENU ***************/
 
 /********************* BLOC INTRO ***************/
@@ -92,8 +91,6 @@ body {
 button {
     @include button;
 }
-
-
 /********************* END BLOC INTRO ***************/
 
 /********************* BLOC SKILLS ***************/
@@ -164,12 +161,11 @@ button {
 }
 
 .fa-sharp {
-    color: #78746c;
+    color: #5c4700;
 }
-
 /********************* END BLOC SKILLS ***************/
 
-/********************* BLOC TRAINING ***************/
+/********************* BLOC TRAINING ****************/
 #Experiences-Professionnelles {
     background-color: $color-white;
     background-image: url("/images/lines-h2-bg.png");
@@ -181,7 +177,6 @@ button {
     background-image: url("/images/lines-h2-bg.png");
     padding: 1em;
 }
-
 
 .resume-section-content {
     padding: 0.5em;
@@ -229,13 +224,9 @@ button {
 .text-date-resume {
     flex-shrink: 0;
 }
-
 /********************* END BLOC TRAINING ***************/
 
-
 /********************* BLOC PORTFOLIO ***************/
-
-/*block Restaurants*/
 #Portfolio {
     background-color: #f8c536c9;
     padding-top: 2em;
@@ -326,11 +317,9 @@ button {
     }
 
 }
-
-/* end block-restaurants*/
 /********************* END BLOC PORTFOLIO ***************/
 
-/********************* FOOTER ***************/
+/********************* FOOTER ***************************/
 #Contact {
     background-color: $secondary-color;
     padding: 20px 0;
@@ -365,19 +354,18 @@ button {
 }
 
 .social-networks {
-    // background-color: #00A1A1;
     display: flex;
     justify-content: space-evenly;
     padding-top: 1.1em;
-}
 
-.link-social-network {
-    text-decoration: none;
-    color: $color-black;
-}
+    .link-social-network {
+        text-decoration: none;
+        color: $color-black;
+    }
 
-.fa-linkedin {
-    color: rgb(59, 91, 152);
+    .fa-linkedin {
+        color: rgb(59, 91, 152);
+    }
 }
 
 .copyright {
@@ -385,8 +373,8 @@ button {
     display: flex;
     justify-content: center;
     padding: 2em;
+    font-weight: 500;
 }
-
 /********************* END FOOTER ***************/
 
 /*********************SCROLL TOP ***************/
@@ -394,12 +382,11 @@ button {
     position: fixed;
     width: 25px;
     height: 0px;
-    bottom: 42px;
-    right: 10px;
-}
+    bottom: 35px;
+    right: 3px;
 
-#scroll_to_top img {
-    width: 25px;
+    &#scroll_to_top img {
+        width: 25px;
+    }
 }
-
 /********************* END SCROLL TOP ***************/
