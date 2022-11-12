@@ -6,9 +6,8 @@
     font-weight: 600;
     background: linear-gradient(0.5deg, #829ab6, #304ecb);
     background-color: #000000;
-    height: 40px;
+    height: 45px;
     width: 11em;
-    font-family: $font-family;
     cursor: pointer;
 
     &.btn-intro:hover {
@@ -18,7 +17,6 @@
 }
 
 @mixin title-block {
-    font-family: $font-family;
     text-align: center;
     font-size: 2em;
 }

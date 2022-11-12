@@ -80,7 +80,6 @@ body {
 .title-intro {
     text-align: center;
     line-height: 2em;
-    font-family: $font-family;
 }
 
 .container-button {
@@ -106,10 +105,6 @@ button {
 
 .title-block {
     @include title-block;
-}
-
-.p-skills {
-    font-family: 'Shrikhand';
 }
 
 .lists-languages {
@@ -163,6 +158,10 @@ button {
 .fa-sharp {
     color: #5c4700;
 }
+
+.p-skills {
+    font-weight: 900;
+}
 /********************* END BLOC SKILLS ***************/
 
 /********************* BLOC TRAINING ****************/
@@ -195,13 +194,11 @@ button {
 }
 
 .p-resume {
-    font-family: $font-family;
     font-size: 1.1em;
     font-weight: 500
 }
 
 .p-date-resume {
-    font-family: $font-family;
     font-size: 1.1em;
     font-weight: 300;
 }
@@ -294,7 +291,7 @@ button {
         }
 
         &.background-img-7 {
-            background-image: url("/images/projet8.png");
+            background-image: url("/images/logo.png");
         }
     }
 
@@ -326,7 +323,7 @@ button {
 }
 
 .logo-footer {
-    font-family: 'Shrikhand';
+    font-weight: 900;
     color: $color-black;
     margin: 40px;
 }
