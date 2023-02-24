@@ -7,8 +7,7 @@ body {
 /********************* HEADER MENU ***************/
 .menu {
   display: none;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   list-style: none;
 }
 
@@ -43,17 +42,10 @@ body {
 }
 
 .nav-wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: rgba(233, 237, 255, 0.79);
   padding: 1em;
 }
@@ -65,31 +57,16 @@ body {
 }
 
 .container-presentation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .img-portrait {
@@ -116,7 +93,6 @@ button {
   color: white;
   font-size: 16px;
   font-weight: 600;
-  background: -o-linear-gradient(89.5deg, #829ab6, #304ecb);
   background: linear-gradient(0.5deg, #829ab6, #304ecb);
   background-color: #000000;
   height: 45px;
@@ -125,8 +101,7 @@ button {
 }
 button.btn-intro:hover {
   background-color: #fff;
-  -webkit-box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
-          box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
+  box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
 }
 
 /********************* END BLOC INTRO ***************/
@@ -147,12 +122,8 @@ button.btn-intro:hover {
 
 .lists-languages {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   padding: 20px;
 }
 
@@ -180,11 +151,8 @@ button.btn-intro:hover {
 
 .box-workflow {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-top: 1em;
 }
 
@@ -218,20 +186,12 @@ button.btn-intro:hover {
 
 .resume-section-content {
   padding: 0.5em;
-  margin: 2em;
 }
 
 .card-resume {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  flex-direction: row;
+  align-items: baseline;
   margin: 2.5em;
 }
 
@@ -264,8 +224,7 @@ button.btn-intro:hover {
 }
 
 .text-date-resume {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 /********************* END BLOC TRAINING ***************/
@@ -284,11 +243,8 @@ button.btn-intro:hover {
 
 .container-portfolio {
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 2.2em;
   width: 80%;
   margin: auto;
@@ -296,8 +252,7 @@ button.btn-intro:hover {
 .container-portfolio .card {
   padding-bottom: 30px;
   width: 40%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 20px;
   margin: auto;
 }
@@ -312,8 +267,6 @@ button.btn-intro:hover {
   position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  -webkit-transition: 0.25s ease;
-  -o-transition: 0.25s ease;
   transition: 0.25s ease;
 }
 .container-portfolio .background-img:hover {
@@ -354,6 +307,61 @@ button.btn-intro:hover {
 }
 
 /********************* END BLOC PORTFOLIO ***************/
+/*********************  BLOC CONTACT FORM ***************/
+#container-form {
+  background-color: rgba(237, 244, 255, 0.43);
+  margin: auto;
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+}
+
+.title-form {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input {
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  border: 2px black solid;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+form textarea {
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  border: 2px black solid;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+form button {
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(0.5deg, #7c7c7c, #1a65e4);
+  background-color: #e20038;
+  height: 45px;
+  margin-top: 15px;
+  width: 11em;
+  cursor: pointer;
+}
+form button.btn-form:hover {
+  background-color: #e7e7e7;
+  color: #f4e8e8;
+  box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
+}
+
+/********************* END BLOC CONTACT FORM ***************/
 /********************* FOOTER ***************************/
 #Contact {
   background-color: rgba(237, 244, 255, 0.43);
@@ -367,12 +375,8 @@ button.btn-intro:hover {
 }
 
 .box-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .list-footer {
@@ -393,12 +397,8 @@ button.btn-intro:hover {
 }
 
 .social-networks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   padding-top: 1.1em;
 }
 .social-networks .link-social-network {
@@ -411,12 +411,8 @@ button.btn-intro:hover {
 
 .copyright {
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 2em;
   font-weight: 500;
 }
@@ -443,8 +439,7 @@ button.btn-intro:hover {
   }
   .menu {
     display: block;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    flex-basis: auto;
     margin: 0;
     padding: 0;
   }
@@ -455,61 +450,33 @@ button.btn-intro:hover {
 }
 @media screen and (max-width: 60em) {
   .card-image {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2em;
+    flex-direction: column;
+    padding: 1.9em;
   }
   .card-skills {
     margin: 0.1em !important;
   }
   .box-workflow {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .lists-languages {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .card-resume {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
     padding-top: 25px;
   }
   .title-resume {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    flex-direction: column;
+    align-items: baseline;
   }
   .container-portfolio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 95%;
   }
   .card {
@@ -519,10 +486,7 @@ button.btn-intro:hover {
     margin: 0.5em;
   }
   .box-footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .list-footer {
     line-height: 2.5em;
@@ -531,4 +495,4 @@ button.btn-intro:hover {
 }
 /********************* END MEDIA QUERIES ***************/
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2Jhc2UvX2luZGV4LnNjc3MiLCIuLi9zdHlsZS5jc3MiLCIuLi91dGlscy9fdmFyaWFibGVzLnNjc3MiLCIuLi91dGlscy9fbWl4aW5zLnNjc3MiLCIuLi9sYXlvdXQvbW9iaWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxTQUFBO0VBQ0EsVUFBQTtFQUNBLG9DQUFBO0FDQ0o7O0FERUEsa0RBQUE7QUFDQTtFQUNJLGFBQUE7RUFDQSw2QkFBQTtNQUFBLGdCQUFBO0VBQ0EsZ0JBQUE7QUNDSjs7QURFQTtFQUNJLHFCQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLFlFakJVO0FEa0JkOztBREVBO0VBQ0ksY0FBQTtFQUNBLGlCQUFBO0FDQ0o7O0FERUE7RUFDSSxjQUFBO0FDQ0o7O0FERUE7RUFDSSxVQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0FDQ0o7O0FERUE7RUFDSSxjQUFBO0FDQ0o7O0FERUE7RUFDSSx5QkFBQTtBQ0NKOztBREVBO0VBQ0kseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSxtQkFBQTtNQUFBLGVBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsOEJBQUE7RUFDQSwyQ0U5Q1k7RUYrQ1osWUFBQTtBQ0NKOztBRENBLHNEQUFBO0FBRUEsaURBQUE7QUFDQTtFQUNJLDJDRXBEYztBRHFEbEI7O0FERUE7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDRCQUFBO0VBQUEsNkJBQUE7TUFBQSwwQkFBQTtVQUFBLHNCQUFBO0VBQ0Esd0JBQUE7TUFBQSxxQkFBQTtVQUFBLHVCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0FDQ0o7O0FERUE7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDhCQUFBO01BQUEsMkJBQUE7VUFBQSw2QkFBQTtFQUNBLHlCQUFBO01BQUEs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 */
+/*# sourceMappingURL=style.css.map */

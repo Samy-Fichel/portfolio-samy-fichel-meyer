@@ -7,7 +7,7 @@ body {
 /********************* HEADER MENU ***************/
 .menu {
     display: none;
-    flex-basis: 100%;
+    flex-basis: 100%; 
     list-style: none;
 }
 
@@ -147,7 +147,7 @@ button {
     display: flex;
     justify-content: space-around;
     padding-top: 1em;
-}
+}  
 
 .list-workflow {
     color: $color-black;
@@ -179,7 +179,6 @@ button {
 
 .resume-section-content {
     padding: 0.5em;
-    margin: 2em;
 }
 
 .card-resume {
@@ -315,6 +314,50 @@ button {
 
 }
 /********************* END BLOC PORTFOLIO ***************/
+
+/*********************  BLOC CONTACT FORM ***************/
+#container-form {
+    background-color: rgba(237, 244, 255, 0.43);
+    margin: auto;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+}
+
+
+
+.title-form {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+        background-color: rgb(255, 255, 255);
+        width: 45%;
+        border: 2px black solid;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+    textarea {
+        background-color: rgb(255, 255, 255);
+        width: 45%;
+        border: 2px black solid;
+        border-radius: 5px;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    button {
+        @include button-form;
+    }
+}
+/********************* END BLOC CONTACT FORM ***************/
 
 /********************* FOOTER ***************************/
 #Contact {
