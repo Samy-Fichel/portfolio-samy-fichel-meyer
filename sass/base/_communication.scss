@@ -1,0 +1,83 @@
+/********************* Start Style Communication ***************/
+.title-block {
+    @include title-size;
+}
+
+.block-communication {
+
+    #filters {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+        margin-top: 2em;
+    }
+
+    #filters li {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    #all,
+    #transport:hover,
+    #nature:hover,
+    #divers:hover {
+        text-decoration: none;
+        color: #0065FC;
+        border-top: 3px solid #0065FC;
+        animation-name: filters-gallery;
+        animation-duration: 0.3s;
+        padding: 5px;
+    }
+
+    #title-gallery {
+        text-align: center;
+        text-align: center;
+        @include title-size;
+        margin-top: 1.5em;
+    }
+
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #gallery .active {
+        width: 30%;
+        padding: 5px;
+        transition: width .3s;
+    }
+
+    #gallery .inactive {
+        width: 0;
+        padding: 0;
+    }
+
+    .background-img-8 {
+        background-image: url("/images/background-img-communication/img-website1.png");
+    }
+
+    .background-img-9 {
+        background-image: url("/images/background-img-communication/background-img-carte-de-visite.png");
+    }
+
+    .background-img-10 {
+        background-image: url("/images/background-img-communication/background-panneau.png");
+    }
+
+    .background-img-11 {
+        background-image: url("/images/galerie-img/scene-en-3d.png");
+    }
+
+    .background-img-12 {
+        background-image: url("/images/background-img-communication/tube-de-colle-3d.png");
+    }
+}
+
+/********************* End Style Communication ***************/

@@ -66,6 +66,14 @@
         margin: 0.5em;
     }
 
+    .block-communication #gallery {
+        flex-direction: column;    
+    }
+
+    .block-communication #gallery .active {
+        width: 70%;
+    }
+
     .box-footer {
         flex-direction: column;
     }

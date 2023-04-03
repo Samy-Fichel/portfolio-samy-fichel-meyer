@@ -40,3 +40,7 @@
         box-shadow: 0.20em 0.20em 10px RGB(0 0 0 / 50%);
     }
 }
+
+@mixin title-size {
+    font-size: 1.7em;
+}
