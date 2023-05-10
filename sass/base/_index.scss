@@ -414,6 +414,18 @@ form {
     justify-content: center;
     padding: 2em;
     font-weight: 500;
+    list-style-type: none;
+
+    .cgu {
+        text-decoration: none;
+        color: $color-black;
+        padding-left: 2em;
+
+        &.cgu:hover{
+            color: #9c410b;
+            font-weight: bold;
+        }
+    }
 }
 /********************* END FOOTER ***************/
 
