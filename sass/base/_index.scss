@@ -244,7 +244,7 @@ button {
 
     .card {
         padding-bottom: 30px;
-        width: 40%;
+        width: 590px;
         box-sizing: border-box;
         border-radius: 20px;
         margin: auto;
@@ -301,7 +301,7 @@ button {
             padding-left: 20px;
             color: $color-black;
             font-weight: 600;
-            line-height: 10px;
+            line-height: 27px;
         }
 
         .text-card {
@@ -412,14 +412,15 @@ form {
     color: $color-black;
     display: flex;
     justify-content: center;
-    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em;
     font-weight: 500;
     list-style-type: none;
 
     .cgu {
         text-decoration: none;
         color: $color-black;
-        padding-left: 2em;
 
         &.cgu:hover{
             color: #9c410b;
@@ -432,7 +433,7 @@ form {
 /*********************SCROLL TOP ***************/
 #scroll_to_top {
     position: fixed;
-    width: 25px;
+    width: 21px;
     height: 0px;
     bottom: 35px;
     right: 3px;
