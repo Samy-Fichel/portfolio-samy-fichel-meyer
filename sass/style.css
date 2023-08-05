@@ -251,7 +251,7 @@ button.btn-intro:hover {
 }
 .container-portfolio .card {
   padding-bottom: 30px;
-  width: 590px;
+  width: 40%;
   box-sizing: border-box;
   border-radius: 20px;
   margin: auto;
